@@ -1,10 +1,11 @@
-import { Module } from "@nestjs/common";
-import { GraphQLModule } from "@nestjs/graphql";
-import { ApolloDriver, ApolloDriverConfig } from "@nestjs/apollo";
-import { join } from "path";
-import { ApolloServerPluginLandingPageLocalDefault } from "@apollo/server/plugin/landingPage/default";
-import { HelloModule } from "./modules/hello/hello.module";
+import { Module } from '@nestjs/common';
+import { GraphQLModule } from '@nestjs/graphql';
+import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
+import { join } from 'path';
+import { ApolloServerPluginLandingPageLocalDefault } from '@apollo/server/plugin/landingPage/default';
+import { HelloModule } from './modules/hello/hello.module';
 import { PrismaModule } from "./modules/prisma/prisma.module";
+import { PokemonModule } from './modules/pokemon/pokemon.module';
 import { TypeOrmModule } from "@nestjs/typeorm";
 
 @Module({
@@ -20,12 +21,13 @@ import { TypeOrmModule } from "@nestjs/typeorm";
     }),
     HelloModule,
     PrismaModule,
+    PokemonModule,
     TypeOrmModule.forRoot({
       type: "sqlite",
       database: "./database/database_orm.sqlite",
       autoLoadEntities: true,
       synchronize: true,
-      migrations: ["../typeorm/migrations/*.ts"],
+      migrations: ['../typeorm/migrations/*.ts'],
     }),
   ],
   controllers: [],
