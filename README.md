@@ -1,12 +1,12 @@
 # Candidate Interview Project - Guilherme Nunes
 
 ## Project Overview
-
 ```
-Backend-Node-Test
 ├── 📁 database
 │   ├── 📄 database_orm.sqlite
 │   └── 📄 database_prisma.sqlite
+├── 📁 postman-collection-graphql
+│   └── ⚙️ postman--dws-brazil-graphql.postman_collection.json
 ├── 📁 prisma
 │   ├── 📁 migrations
 │   │   ├── 📁 initial_migration
@@ -70,9 +70,7 @@ Backend-Node-Test
 
 ```bash
 git clone https://github.com/Panzer-Sigma/Backend-Node-Test
-
-Todas as instruções no projeto!)
-cd DWS-BACKEND-NODE-TEST
+cd Backend-Node-Test
 ```
 
 ### 2. Install Dependencies
@@ -236,6 +234,7 @@ curl -X DELETE http://localhost:4000/pokemon/1
 ### GraphQL API
 
 **Endpoint:** `http://localhost:4000/graphql`
+**There is a collection called "postman-collection-graphql" that you can use to make the requests for graphql!**
 
 
 #### Queries
@@ -303,5 +302,7 @@ mutation {
   }
 }
 ```
+
+
 
 
