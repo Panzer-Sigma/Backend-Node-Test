@@ -69,7 +69,9 @@ Backend-Node-Test
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Panzer-Sigma/DWS-BACKEND-NODE-TEST.git
+git clone https://github.com/Panzer-Sigma/Backend-Node-Test
+
+Todas as instruções no projeto!)
 cd DWS-BACKEND-NODE-TEST
 ```
 
