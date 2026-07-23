@@ -1,4 +1,4 @@
-# Candidate Interview Project - Guilherme Nunes
+# NestJS Backend Template - Pokemón API
 
 ## Project Overview
 ```
